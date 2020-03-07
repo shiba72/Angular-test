@@ -1,0 +1,70 @@
+/*Noto Sans JPフォントをインポート*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/*pタグのデフォルトのmarginは0px*/
+p{
+  margin: 0px;
+}
+/*全体の枠*/
+.wrapper{
+  padding: 12px;
+  margin-bottom: 100px;
+}
+/*課題のタイトル*/
+.app-name p{
+  font-size: 22px;
+  font-weight: 900;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/*記事を並べるためのflexbox*/
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/*一つ一つの記事の入れ物*/
+.container{
+  width: 25%;
+}
+/*記事*/
+.article{
+  background-color: white;
+  margin: 20px;
+  border-radius: 4px;
+}
+/*記事の写真*/
+.article__photo img{
+	max-width: 100%;
+  height: auto;
+  border-radius: 4px 4px 0px 0px;
+}
+/*記事のタイトル*/
+p.article__title{
+  font-style: 18px;
+  font-weight: 900;
+  padding: 10px 12px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/*記事の説明*/
+p.article__detail{
+  font-size: 13px;
+  line-height: 19px;
+  padding: 10px 12px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  /*記事を並べるためのflexbox*/
+  .flexbox{
+    display: block;
+  }
+  /*一つ一つの記事の入れ物*/
+  .container{
+    width: 100%;
+    margin-top: 16px;
+  }
+  /*記事*/
+  .article{
+    margin: unset;
+  }
+}

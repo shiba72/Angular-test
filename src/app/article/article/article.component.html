@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="app-name">
+    <p>投稿一覧</p>
+  </div>
+  <div class="flexbox">
+    <!--これで一つ記事-->
+    <div class="container" *ngFor="let article of articles">
+      <div class="article">
+        <div class="article__photo">
+          <picture>
+            <!-- WebP用画像 -->
+            <source srcset="{{article.image.url}}?fm=webp" type="image/webp" clip>
+            <!-- 従来画像 -->
+            <img src="{{article.image.url}}">
+          </picture>
+        </div>
+        <p class="article__title">{{article.title}}</p>
+        <p class="article__detail">{{article.description}}</p>
+      </div>
+    </div>
+    <!--これで一つ記事↑-->
+  </div>
+</div>
+
