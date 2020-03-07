@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
+# SetUp
+
+ `git clone https://github.com/shiba72/Angular-test.git `
+ 
+ `cd Angular-test `
+ 
+ `npm install`
+ 
+ `ng build`
+ 
+ `ng serve`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
